@@ -1,0 +1,29 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node utils/seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesshaff/Social-Network-API-NoSQL-18"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesshaff/Social-Network-API-NoSQL-18/issues"
+  },
+  "homepage": "https://github.com/jesshaff/Social-Network-API-NoSQL-18#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongo-db": "^1.0.2",
+    "mongoose": "^6.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}
