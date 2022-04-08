@@ -1,13 +1,13 @@
 const User = require('../models/User');
 
 module.exports = {
-  // Get all user
+  // Get all users
   getUsers(req, res) {
     User.find()
       .then((users) => res.json(users))
       .catch((err) => res.status(500).json(err));
   },
-  // Get single user
+  // Get a single user
   getSingleUser(req, res) {
     User.findOne({ _id: req.params.userId })
       .select('-__v')
@@ -24,7 +24,7 @@ module.exports = {
       .then((dbUserData) => res.json(dbUserData))
       .catch((err) => res.status(500).json(err));
   },
-  // Update user
+  // Update the user
   updateUser(req, res) {
     User.findOneAndUpdate({ _id: req.params.userId })
       .then((user) =>
@@ -34,7 +34,7 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-  // Delete user
+  // Delete the user
   deleteUser(req, res) {
     User.findOneAndDelete({ _id: req.params.userId })
       .then((user) =>
