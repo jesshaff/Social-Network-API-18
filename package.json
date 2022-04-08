@@ -20,8 +20,10 @@
   "homepage": "https://github.com/jesshaff/Social-Network-API-NoSQL-18#readme",
   "dependencies": {
     "express": "^4.17.3",
+    "loader": "^2.1.1",
     "mongo-db": "^1.0.2",
-    "mongoose": "^6.2.7"
+    "mongoose": "^6.2.7",
+    "routes": "^2.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.9"
