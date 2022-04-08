@@ -12,7 +12,7 @@ module.exports = {
     Thought.findOne({ _id: req.params.thoughtId })
       .then((thought) =>
         !thought
-          ? res.status(404).json({ message: 'No thought in that handsome head!' })
+          ? res.status(404).json({ message: 'Error - Thought not added!' })
           : res.json(thought)
       )
       .catch((err) => res.status(500).json(err));
@@ -48,7 +48,7 @@ module.exports = {
     )
       .then((thought) =>
         !thought
-          ? res.status(404).json({ message: 'No thought in that handsome head!' })
+          ? res.status(404).json({ message: 'Error - Thought not added!' })
           : res.json(thought)
       )
       .catch((err) => {
@@ -61,7 +61,7 @@ module.exports = {
     Thought.findOneAndDelete({ _id: req.params.videoId })
       .then((thought) =>
         !thought
-          ? res.status(404).json({ message: 'No thought in that handsome head!' })
+          ? res.status(404).json({ message: 'Error - Thought not added!' })
           : User.findOneAndUpdate(
               { thoughts: req.params.videoId },
               { $pull: { thoughts: req.params.videoId } },
@@ -86,7 +86,7 @@ module.exports = {
     )
       .then((thought) =>
         !thought
-          ? res.status(404).json({ message: 'No thought in that handsome head!' })
+          ? res.status(404).json({ message: 'Error - Reaction not added!' })
           : res.json(thought)
       )
       .catch((err) => res.status(500).json(err));
@@ -100,7 +100,7 @@ module.exports = {
     )
       .then((thought) =>
         !thought
-          ? res.status(404).json({ message: 'No thought in that handsome head!' })
+          ? res.status(404).json({ message: 'Error - Reaction not added!' })
           : res.json(thought)
       )
       .catch((err) => res.status(500).json(err));

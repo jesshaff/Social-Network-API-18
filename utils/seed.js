@@ -59,7 +59,7 @@ connection.once('open', async () => {
     const thoughts = [
         {
             "_id": "624fab68944719641c4a4d92",
-            "thoughtText": "Work hard, code harder!",
+            "thought": "Work hard, code harder!",
             "username": "Jess",
             "createdAt": "Apr 2nd 2022",
             "reactions": [],
@@ -69,7 +69,7 @@ connection.once('open', async () => {
         },
         {
             "_id": "624fab68944719641c4a4d93",
-            "thoughtText": "Coding > sleep",
+            "thought": "Coding > sleep",
             "username": "Sujil",
             "createdAt": "Apr 3rdth 2022",
             "reactions": [],
@@ -79,7 +79,7 @@ connection.once('open', async () => {
         },
         {
             "_id": "624fab68944719641c4a4d94",
-            "thoughtText": "I love this app!",
+            "thought": "I love this app!",
             "username": "Indie",
             "createdAt": "Apr 3rd 2022",
             "reactions": [],
@@ -89,7 +89,7 @@ connection.once('open', async () => {
         },
         {
             "_id": "624fab68944719641c4a4d95",
-            "thoughtText": "I have many thoughts",
+            "thought": "I have many thoughts",
             "username": "Reid",
             "createdAt": "Apr 4th 2022",
             "reactions": [],
@@ -99,7 +99,7 @@ connection.once('open', async () => {
         },
         {
             "_id": "624fab68944719641c4a4d96",
-            "thoughtText": "Georgia Tech is the best!",
+            "thought": "Georgia Tech is the best!",
             "username": "Kristin",
             "createdAt": "Apr 4th 2022",
             "reactions": [],
